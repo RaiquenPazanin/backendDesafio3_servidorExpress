@@ -97,7 +97,7 @@ class Contenedor{
 
 }
 
-app.use((req, res, next)=>{
+app.use('/', (req, res, next)=>{
 
     miArchivo = new Contenedor("miArchivo.txt");
     miArchivo.save("coca", 200, "WWWW...");
